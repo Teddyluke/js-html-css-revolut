@@ -53,12 +53,13 @@
 
 .nav-menu li {
   display: inline-block;
+  position: relative;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: grey;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .download-app-btn {
@@ -72,4 +73,71 @@
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+/* regole dropdown menu */
+
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown li {
+padding: 15px 0;
+width: 100%;
+}
+
+.drp-money {
+  position: absolute;
+  background-color: white;
+  width: 214px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 4px lightgrey);
+  top: 40px;
+}
+
+.drp-investment {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 4px lightgrey);
+  top: 40px;
+}
+
+.drp-check {
+  position: absolute;
+  background-color: white;
+  width: 148px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 4px lightgrey);
+  top: 40px;
+}
+
+.drp-else {
+  position: absolute;
+  background-color: white;
+  width: 230px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 4px lightgrey);
+  top: 40px;
+}
+
+.drp-else ul:last-of-type li {
+padding: 20px 20px;
+color: lightgrey;
+}
+
+.drp-plans {
+  position: absolute;
+  background-color: white;
+  width: 130px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 4px lightgrey);
+  top: 40px;
 }
