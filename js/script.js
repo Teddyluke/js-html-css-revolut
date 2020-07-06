@@ -20,6 +20,7 @@ $(document).ready(function () {
     $(this).fadeTo( "slow", 1, function () {
     });
   });
+
  // regole per dropdown menu
   $(".nav-menu li").mouseenter(function () {
     $(this).children(".dropdown").addClass("show").removeClass("hidden");

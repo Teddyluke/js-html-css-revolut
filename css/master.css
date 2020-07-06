@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*  regole header parte alta */
@@ -140,4 +141,37 @@ color: lightgrey;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
+}
+
+
+/*  regole MAIN */
+.jumbotron {
+  display: flex;
+  padding: 0 60px;
+}
+
+.left-jumbo {
+  width: 50%;
+  text-align: left;
+}
+
+.right-jumbo {
+  width: 50%;
+  padding: 0 0.75rem;
+}
+
+.left-jumbo h1 {
+  font-size: 90px;
+  line-height: 87px;
+  padding-top: 30px;
+}
+
+.left-jumbo p:first-of-type {
+  color: grey;
+  padding-top: 30px;
+  font-size: 21px;
+  line-height: 28px;
+}
+.right-jumbo img {
+height: 610px;
 }
