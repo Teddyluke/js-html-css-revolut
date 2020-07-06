@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  regole header parte alta */
+.top-header {
+  display: flex;
+  background-color: #f3f4f5;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+}
+
+
+.top-header-left li, .top-header-right li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+.top-header-left a, .top-header-right a{
+  text-decoration: none;
+  color: grey;
+}
+
+/*  regole header seconda linea */
+
+.main-header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.logo-menu-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#logo a {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: grey;
+  padding: 0 20px;
+}
+
+.download-app-btn {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 15px 8px;
+  background-color: black;
+}
+
+.download-app-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
