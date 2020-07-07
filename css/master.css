@@ -96,7 +96,7 @@ width: 100%;
 .drp-money {
   position: absolute;
   background-color: white;
-  width: 214px;
+  width: 245px;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
@@ -105,7 +105,7 @@ width: 100%;
 .drp-investment {
   position: absolute;
   background-color: white;
-  width: 300px;
+  width: 330px;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
@@ -114,7 +114,7 @@ width: 100%;
 .drp-check {
   position: absolute;
   background-color: white;
-  width: 148px;
+  width: 180px;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
@@ -123,7 +123,7 @@ width: 100%;
 .drp-else {
   position: absolute;
   background-color: white;
-  width: 230px;
+  width: 270px;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
@@ -142,7 +142,15 @@ color: lightgrey;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
 }
+/* regole per menu responsive */
+.burger-menu-icon {
+  display: none;
+}
 
+.burger-menu-icon a {
+  text-decoration: none;
+  color: lightgrey;
+}
 
 /*  regole MAIN */
 .jumbotron {
@@ -152,7 +160,6 @@ color: lightgrey;
 
 .left-jumbo {
   width: 50%;
-  text-align: left;
 }
 
 .right-jumbo {
@@ -164,6 +171,7 @@ color: lightgrey;
   font-size: 90px;
   line-height: 87px;
   padding-top: 30px;
+  width: 73%;
 }
 
 .left-jumbo p:first-of-type {
@@ -171,7 +179,83 @@ color: lightgrey;
   padding-top: 30px;
   font-size: 21px;
   line-height: 28px;
+  width: 79%;
 }
+.wrapper-flex {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  margin-top: 2em;
+}
+
+.prefisso {
+  border-bottom: 1px solid lightgrey;
+}
+
+.prefisso .fas {
+  font-size: 0.5em;
+  padding-left: 30px;
+
+  color: lightgrey;
+}
+
+.telnum {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  margin-left: 15px;
+}
+
+.left-jumbo button {
+  color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: grey;
+  padding: 10px 35px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
 .right-jumbo img {
 height: 610px;
+}
+
+
+@media all and (max-width: 1026px){
+
+  .top-header {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .download-app-btn {
+    display: none;
+  }
+
+  .burger-menu-icon {
+    display: block;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-jumbo h1 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+  }
+  .left-jumbo p:first-of-type {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper-flex {
+    display: none;
+  }
+  .jumbotron p:last-of-type{
+    display: none;
+  }
 }

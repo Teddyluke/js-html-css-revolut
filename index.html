@@ -7,6 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   </head>
   <body>
     <!-- header -->
@@ -75,7 +76,7 @@
                   </ul>
                   <ul>
                     <li>Prossimamente</li>
-                    <li>Scopr i premi</li>
+                    <li>Scopri premi</li>
                   </ul>
                 </div>
               </li>
@@ -97,6 +98,9 @@
         <div class="download-app-btn">
           <a href="#">Scarica l'app</a>
         </div>
+        <div class="burger-menu-icon">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
       </nav>
     </header>
 
@@ -106,10 +110,16 @@
         <div class="left-jumbo">
           <h1>Ottieni di più dai tuoi fondi</h1>
           <p>Cambia denaro senza commissioni nascoste. Acquista Crypto e oro, oppure effettua una compravendita di azioni a partire da $ 1 e gestisci il tuo denaro con l'analisi della spesa. Unisciti a più di 10 milione di clienti Revolut.</p>
-          <span> +39 freccina</span>
-          <input type="number" name="telnum" value="">
-          <a href="#">inizia</a>
-          <p>orologio Apri unconto in pochi minuti</p>
+          <div class="wrapper-flex">
+            <div class="">
+              <span class="prefisso"> +39  <i class="fas fa-chevron-down"></i> </span>
+            </div>
+            <div class="">
+              <input class="telnum" type="number" name="telnum" value="" placeholder="Numero di telefono">
+            </div>
+            <button type="button" name="button">Inizia</button>
+          </div>
+          <p><i class="fas fa-clock"></i> Apri unconto in pochi minuti</p>
         </div>
         <div class="right-jumbo">
           <img src="./img/phone.png" alt="phone">
