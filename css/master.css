@@ -196,7 +196,18 @@ color: lightgrey;
   color: grey;
 }
 
+.burger-menu-main a:active{
+  color: black;
+}
 
+.burger-menu-main li {
+  padding: 20px 0;
+}
+
+.burger-menu-main .freccina-su,.burger-menu-main .freccina-giu {
+  float: right;
+  color: grey;
+}
 
 /*  regole MAIN */
 .jumbotron {
