@@ -30,4 +30,26 @@ $(document).ready(function () {
     $(this).children(".dropdown").addClass("hidden").removeClass("show");
   });
 
+  // regole menù hamburger responsive
+  $(".burger-menu-icon a").click(function () {
+    $(".burger-menu-wrapper").fadeIn("slow")
+  })
+  $(".burger-menu-close a").click(function () {
+    $(".burger-menu-wrapper").fadeOut("slow")
+  })
+  $(".burger-menu-top a").mouseenter(function () {
+    $(this).css("color","black");
+  });
+  $(".burger-menu-top a").mouseout(function () {
+    $(this).css("color","grey");
+  });
+
+  $(".burger-menu-main li").click(function () {
+    $(this).children(".dropdown").toggle("");
+  });
+  // LAVORARCI SU
+  // $(".burger-menu-main a").click(function () {
+  //   $(this).toggleClass("color");
+  // })
+
 });

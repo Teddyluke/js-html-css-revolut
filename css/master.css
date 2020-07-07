@@ -142,7 +142,7 @@ color: lightgrey;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
 }
-/* regole per menu responsive */
+/* regole per menu hamburger responsive*/
 .burger-menu-icon {
   display: none;
 }
@@ -151,6 +151,52 @@ color: lightgrey;
   text-decoration: none;
   color: lightgrey;
 }
+
+.burger-menu-wrapper {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left:0;
+  background-color: white;
+}
+
+.burger-menu-top {
+  min-height: 90px;
+  background-color: #f3f4f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu-top li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+.burger-menu-top a{
+  text-decoration: none;
+  color: grey;
+}
+
+.burger-menu-close i {
+  color: grey;
+  padding-right: 30px;
+}
+.burger-menu-main {
+  padding: 0 25px;
+}
+
+.burger-menu-main ul{
+  list-style: none;
+}
+
+.burger-menu-main a{
+  text-decoration: none;
+  color: grey;
+}
+
+
 
 /*  regole MAIN */
 .jumbotron {
@@ -220,6 +266,9 @@ color: lightgrey;
 height: 610px;
 }
 
+.financial-life {
+  display: none;
+}
 
 @media all and (max-width: 1026px){
 
@@ -257,5 +306,16 @@ height: 610px;
   }
   .jumbotron p:last-of-type{
     display: none;
+  }
+  .right-jumbo img {
+  max-height: 410px;
+  }
+
+  .financial-life {
+    display: block;
+  }
+
+  .financial-life h2 {
+    text-align: center;
   }
 }
