@@ -48,17 +48,11 @@ $(document).ready(function () {
     $(this).children(".dropdown").toggle("");
   });
 
+  // regole freccine hamburger menu
   $(".burger-menu-main li").click(function () {
     $(this).children(".freccina-giu").toggle("");
   });
   $(".burger-menu-main li").click(function () {
     $(this).children(".freccina-su").toggle("");
   });
-
-
-  // LAVORARCI SU
-  // $(".burger-menu-main a").click(function () {
-  //   $(this).toggleClass("color");
-  // })
-
 });

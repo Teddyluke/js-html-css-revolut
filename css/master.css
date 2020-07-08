@@ -1,8 +1,17 @@
+/* regole generali */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
 }
 
 /*  regole header parte alta */
@@ -63,27 +72,18 @@
   padding: 20px 20px;
 }
 
-.download-app-btn {
+.download-app-btn a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
   border-radius: 10px;
   border: 1px solid black;
   padding: 15px 8px;
-  background-color: black;
 }
 
-.download-app-btn a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
+/* regole dropdown menu versione desktop */
 
-/* regole dropdown menu */
-
-.show {
-  display: block;
-}
-.hidden {
-  display: none;
-}
 .dropdown ul {
   list-style: none;
 }
@@ -142,7 +142,8 @@ color: lightgrey;
   filter: drop-shadow(1px 1px 4px lightgrey);
   top: 40px;
 }
-/* regole per menu hamburger responsive*/
+/* regole per menu hamburger versione mobile*/
+
 .burger-menu-icon {
   display: none;
 }
@@ -196,9 +197,6 @@ color: lightgrey;
   color: grey;
 }
 
-.burger-menu-main a:active{
-  color: black;
-}
 
 .burger-menu-main li {
   padding: 20px 0;
@@ -207,6 +205,7 @@ color: lightgrey;
 .burger-menu-main .freccina-su,.burger-menu-main .freccina-giu {
   float: right;
   color: grey;
+  cursor: pointer;
 }
 
 /*  regole MAIN */
@@ -238,7 +237,7 @@ color: lightgrey;
   line-height: 28px;
   width: 79%;
 }
-.wrapper-flex {
+.wrapper-flex-jumbo {
   display: flex;
   align-items: center;
   min-height: 90px;
@@ -272,7 +271,6 @@ color: lightgrey;
   cursor: pointer;
 }
 
-
 .right-jumbo img {
 height: 610px;
 }
@@ -280,9 +278,9 @@ height: 610px;
 .financial-life {
   display: none;
 }
-
+/* media query */
 @media all and (max-width: 1026px){
-
+  /*  regole media header */
   .top-header {
     display: none;
   }
@@ -296,7 +294,7 @@ height: 610px;
   .burger-menu-icon {
     display: block;
   }
-
+  /* regole media main */
   .jumbotron {
     flex-direction: column;
     justify-content: center;
@@ -312,7 +310,7 @@ height: 610px;
     width: 100%;
     text-align: center;
   }
-  .wrapper-flex {
+  .wrapper-flex-jumbo {
     display: none;
   }
   .jumbotron p:last-of-type{
